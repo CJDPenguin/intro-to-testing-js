@@ -26,6 +26,9 @@ describe('sayHello', function(){
     it('should return "Hello, Alex!" when passed "Alex"', function () {
         expect(sayHello("Alex")).toBe("Hello, Alex!");
     });
+    it('should return "Hello, Pat!" when passed "Pat"', function () {
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
+    });
 });
     // plusOne
 describe('plusOne',function () {
