@@ -11,6 +11,12 @@ function sayHello(name) {
 function isFive(num){
     return parseFloat(num) === 5;
 }
+
+//isEven function
+function isEven(num){
+    return (isNaN(num)!==true ? parseFloat(num) % 2 === 0 : false);
+}
+
 // plusOne function
 function plusOne (num) {
     if(typeof num === "number") {
