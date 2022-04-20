@@ -7,6 +7,10 @@ function sayHello(name) {
     return (typeof name === "string" && isNaN(name) ===true ? "Hello, " + name + "!" : "Hello, World!");
 }
 
+//isFive function
+function isFive(num){
+    return parseFloat(num) === 5;
+}
 // plusOne function
 function plusOne (num) {
     if(typeof num === "number") {
