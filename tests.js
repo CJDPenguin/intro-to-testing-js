@@ -97,6 +97,27 @@ describe('sayHello', function(){
             expect(isEven()).toBe(false);
         })
     })
+    //isVowel
+    describe('isVowel', function() {
+        it('should be a defined function', function (){
+            expect(typeof isVowel).toBe('function');
+        });
+        it('should always return a boolean', function (){
+            expect(typeof isVowel()).toBe('boolean');
+        });
+        it('should return true for "a"', function () {
+            expect(isVowel('a')).toBe(true);
+        });
+        it('should return true for "A"', function () {
+            expect(isVowel('A')).toBe(true);
+        });
+        it('should return false for "y"', function () {
+            expect(isVowel('y')).toBe(false);
+        });
+        it('should return false for 4', function () {
+            expect(isVowel('y')).toBe(false);
+        });
+    })
     // plusOne
 describe('plusOne',function () {
     it ('should be a defined function', function() {

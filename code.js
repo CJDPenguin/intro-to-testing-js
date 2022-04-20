@@ -17,6 +17,11 @@ function isEven(num){
     return (isNaN(num)!==true ? parseFloat(num) % 2 === 0 : false);
 }
 
+//isVowel function
+function isVowel(input){
+    console.log("".match(/a|e|i|o|u /i));
+    return (input.match(/a|e|i|o|u /i))
+}
 // plusOne function
 function plusOne (num) {
     if(typeof num === "number") {
