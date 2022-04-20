@@ -29,6 +29,25 @@ describe('sayHello', function(){
     it('should return "Hello, Pat!" when passed "Pat"', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
+    it('should return "Hello, World!" when passed "World"', function () { expect(sayHello("World")).toBe("Hello, World!")});
+    it('should return "Hello, World!" when passed true', function () {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when passed null', function () {
+        expect(sayHello(null)).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when passed an empty string', function () {
+        expect(sayHello("")).toBe("Hello, World!");
+    })
+    it('should return "Hello, World!" when passed a number', function () {
+        expect(sayHello(2.3)).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when passed a number inside a string', function(){
+        expect(sayHello("5")).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when passed a different data type', function () {
+        expect(sayHello(['fruits', 'veggies', 'grains'])).toBe("Hello, World!");
+    });
 });
     // plusOne
 describe('plusOne',function () {
